@@ -103,7 +103,7 @@ export default function Services() {
           </div>
 
           {/* Bottom Row: 3 Small Cards */}
-          <div className="md:col-span-2 bg-[#E2FF54] rounded-3xl p-8 min-h-50 flex flex-col justify-center">
+          <div className="md:col-span-2 bg-[#E2FF54] rounded-3xl p-4 md:p-6 min-h-50 flex flex-col justify-center">
             <h3 className="text-black text-xl md:text-2xl font-semibold font-montserrat leading-tight">
               100% Dedication
             </h3>
@@ -113,7 +113,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="md:col-span-2 bg-white rounded-3xl p-6 min-h-50 flex items-center justify-between overflow-hidden group">
+          <div className="md:col-span-2 bg-white rounded-3xl p-4 md:p-6 min-h-50 flex items-center justify-between overflow-hidden group">
             {/* Left Side: Text Content */}
             <div className="flex flex-col gap-3 max-w-[55%]">
               <div className="bg-[#16B51E] w-8 h-8 rounded-full flex items-center justify-center text-white text-sm shadow-sm">
@@ -134,7 +134,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="md:col-span-2 bg-[#2D907A] rounded-3xl p-8 min-h-50 flex items-center justify-center text-center cursor-pointer hover:bg-[#3a5d75] transition-colors">
+          <div className="md:col-span-2 bg-[#2D907A] rounded-3xl p-4 md:p-6 min-h-50 flex items-center justify-center text-center cursor-pointer hover:bg-[#3a5d75] transition-colors">
             <h3 className="text-white text-xl md:text-2xl font-semibold font-montserrat">
               Visit Our Services Page
             </h3>
