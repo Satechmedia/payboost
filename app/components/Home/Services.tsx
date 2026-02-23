@@ -36,7 +36,7 @@ export default function Services() {
               <div className="bg-[#16B51E] w-10 h-10 rounded-full flex items-center justify-center mb-4">
                 🌐
               </div>
-              <h3 className="text-black text-2xl font-bold font-syne uppercase">
+              <h3 className="text-black text-xl md:text-2xl font-bold font-syne uppercase">
                 Transfers Across The Globe Are Free
               </h3>
             </div>
@@ -49,7 +49,7 @@ export default function Services() {
               <div className="bg-[#16B51E] w-10 h-10 rounded-full flex items-center justify-center mb-4 shadow-sm">
                 📈
               </div>
-              <h3 className="text-black text-2xl font-bold font-syne uppercase mb-2 leading-tight">
+              <h3 className="text-black text-xl md:text-2xl font-bold font-syne uppercase mb-2 leading-tight">
                 Create A Card That Is <br className="hidden lg:block" /> Unique
                 And Customized
               </h3>
@@ -79,7 +79,7 @@ export default function Services() {
               <div className="bg-[#16B51E] w-10 h-10 rounded-full flex items-center justify-center mb-4 shadow-sm">
                 ⚙️
               </div>
-              <h3 className="text-white text-2xl font-bold font-syne uppercase mb-2 leading-tight">
+              <h3 className="text-white text-xl md:text-2xl font-bold font-syne uppercase mb-2 leading-tight">
                 Personalized Insights <br className="hidden lg:block" /> And
                 Financial Goals
               </h3>
