@@ -4,8 +4,8 @@ import Image from 'next/image'
 import Line from '@/app/components/shared/Line'
 import AppStore from '@/public/Images/AppStore.png'
 import GooglePlay from '@/public/Images/GooglePlay.png'
-import HeroImage from '@/public/Images/HeroImage.png'
-import CryptoImage from '@/public/Images/Hero.png'
+import PayImage from '@/public/Images/HeroPay.png'
+import CryptoImage from '@/public/Images/HeroCrypto.png'
 import HeroBG from '@/public/Images/Hero BG.png'
 import Vector from '@/public/Images/Vector.png'
 import HeroOverlay from '@/public/Images/HeroOverlay.png'
@@ -22,14 +22,14 @@ export default function Hero({ mode, setMode }: HeroProps) {
       highlight: 'Flexibility',
       description:
         'no-fee checking account with cash back rewards. Enjoy fee-free banking and earn cash back on your everyday purchases.',
-      image: HeroImage,
+      image: PayImage,
     },
     crypto: {
       title: 'The Future of Digital',
       highlight: 'Currency',
       description:
         'Buy, sell, and manage your crypto assets with industry-leading security. Seamlessly integrate your digital wallet with your daily spending.',
-      image: CryptoImage, // Swap this with a crypto-specific image if you have one
+      image: CryptoImage,
     },
   }
 

@@ -36,7 +36,7 @@ export default function Features() {
   ]
 
   return (
-    <section className="relative overflow-hidden w-full py-20">
+    <section id='features' className="relative overflow-hidden w-full py-20">
       {/* BACKGROUND IMAGE LAYER */}
       <div className="absolute inset-0 w-full">
         <Image

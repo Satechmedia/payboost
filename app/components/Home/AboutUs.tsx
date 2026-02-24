@@ -14,7 +14,7 @@ interface AboutProps {
 
 export default function AboutUs({ mode, setMode }: AboutProps) {
   return (
-    <section className="relative overflow-hidden w-full grid md:grid-cols-2 gap-12 items-center">
+    <section id='about-us' className="relative overflow-hidden w-full grid md:grid-cols-2 gap-12 items-center py-16">
       {/* BACKGROUND IMAGE LAYER */}
       <div className="absolute z-10 inset-0 w-full ">
         <Image

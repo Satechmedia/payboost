@@ -1,11 +1,17 @@
 import Image from 'next/image'
 import SectionBG from '@/public/Images/SectionBG.png'
-import ServicePhones from '@/public/Images/ServicePhones.png' // Big top card
-import CardsMockup from '@/public/Images/CardsMockup.png' // Left middle card
-import InsightsMockup from '@/public/Images/InsightsMockup.png' // Right middle card
+import ServicePhones from '@/public/Images/ServicePhones.png'
+import CardsMockup from '@/public/Images/CardsMockup.png'
+import InsightsMockup from '@/public/Images/InsightsMockup.png'
 import { SectionHeading, SectionTag } from '@/app/components/shared/Typography'
 import ExpenseDetails from '@/public/Images/ExpenseDetails.png'
 import ActionButton from '@/app/components/shared/ActionButton'
+
+// --- Added React Icons ---
+import { FiGlobe } from 'react-icons/fi'
+import { LuTrendingUp } from 'react-icons/lu'
+import { HiOutlineCog6Tooth } from 'react-icons/hi2'
+import { FaDollarSign } from 'react-icons/fa'
 
 export default function Services() {
   return (
@@ -27,28 +33,31 @@ export default function Services() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
           {/* Top Row: Global Transfers */}
-          <div className="md:col-span-6 bg-white rounded-3xl p-4 md:p-8 flex flex-col md:flex-row items-center justify-between overflow-hidden h-[300px]">
-            <Image
-              src={ServicePhones}
-              alt="Global"
-              className="w-full max-w-sm object-contain"
-            />
-            <div className="max-w-xs">
-              <div className="bg-[#16B51E] w-10 h-10 rounded-full flex items-center justify-center mb-4">
-                🌐
+          <div className="md:col-span-6 bg-white rounded-3xl py-4 px-4 md:py-0 md:px-8 h-auto md:h-75 overflow-hidden">
+            <div className="w-full max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-between h-full">
+              <Image
+                src={ServicePhones}
+                alt="Global"
+                className="w-full max-w-sm object-contain h-full order-2 md:order-1"
+              />
+              <div className="max-w-xs order-1 md:order-2">
+                <div className="bg-[#16B51E] w-10 h-10 rounded-full flex items-center justify-center mb-4">
+                  {/* REPLACED: 🌐 */}
+                  <FiGlobe className="text-white text-xl" />
+                </div>
+                <h3 className="text-black text-xl md:text-2xl font-bold font-syne">
+                  Transfers Across The Globe Are Free
+                </h3>
               </div>
-              <h3 className="text-black text-xl md:text-2xl font-bold font-syne uppercase">
-                Transfers Across The Globe Are Free
-              </h3>
             </div>
           </div>
 
           {/* Middle Left: Virtual Cards */}
-          <div className="md:col-span-3 bg-white rounded-3xl h-[450px] flex flex-col relative overflow-hidden group">
-            {/* TOP CONTENT */}
-            <div className="py-4 md:py-8 p-4 md:p-8 flex-shrink-0">
-              <div className="bg-[#16B51E] w-10 h-10 rounded-full flex items-center justify-center mb-4 shadow-sm">
-                📈
+          <div className="md:col-span-3 bg-[#F6F9F8] rounded-3xl h-112.5 flex flex-col relative overflow-hidden group">
+            <div className="py-4 md:py-8 p-4 md:p-8 shrink-0">
+              <div className="bg-primary w-10 h-10 rounded-full flex items-center justify-center mb-4 shadow-sm">
+                {/* REPLACED: 📈 */}
+                <LuTrendingUp className="text-white text-xl" />
               </div>
               <h3 className="text-black text-xl md:text-2xl font-bold font-syne uppercase mb-2 leading-tight">
                 Create A Card That Is <br className="hidden lg:block" /> Unique
@@ -61,8 +70,6 @@ export default function Services() {
               </p>
             </div>
 
-            {/* IMAGE CONTAINER */}
-            {/* mt-auto pushes this to the bottom. h-full allows it to take up all remaining space */}
             <div className="mt-auto relative w-full h-full overflow-hidden">
               <Image
                 src={CardsMockup}
@@ -74,11 +81,12 @@ export default function Services() {
             </div>
           </div>
 
+          {/* Middle Right: Insights */}
           <div className="md:col-span-3 bg-[#051F20] rounded-3xl h-112.5 flex flex-col relative overflow-hidden border border-white/5 group">
-            {/* TOP CONTENT */}
             <div className="pt-8 px-4 md:px-8 shrink-0">
               <div className="bg-[#16B51E] w-10 h-10 rounded-full flex items-center justify-center mb-4 shadow-sm">
-                ⚙️
+                {/* REPLACED: ⚙️ */}
+                <HiOutlineCog6Tooth className="text-white text-xl" />
               </div>
               <h3 className="text-white text-xl md:text-2xl font-bold font-syne uppercase mb-2 leading-tight">
                 Personalized Insights <br className="hidden lg:block" /> And
@@ -91,7 +99,6 @@ export default function Services() {
               </p>
             </div>
 
-            {/* IMAGE CONTAINER */}
             <div className="mt-auto relative w-full h-full overflow-hidden flex justify-end">
               <Image
                 src={InsightsMockup}
@@ -115,17 +122,16 @@ export default function Services() {
           </div>
 
           <div className="md:col-span-2 bg-white rounded-3xl p-4 md:p-6 min-h-50 flex items-center justify-between overflow-hidden group">
-            {/* Left Side: Text Content */}
             <div className="flex flex-col gap-3 max-w-[55%]">
-              <div className="bg-[#16B51E] w-8 h-8 rounded-full flex items-center justify-center text-white text-sm shadow-sm">
-                $
+              <div className="bg-[#16B51E] w-8 h-8 rounded-full flex items-center justify-center text-white shadow-sm">
+                {/* REPLACED: $ */}
+                <FaDollarSign className="text-sm" />
               </div>
               <h3 className="text-black text-xl md:text-2xl font-semibold font-montserrat leading-tight">
                 Hold Money In 30+ Currencies
               </h3>
             </div>
 
-            {/* Right Side: Image Content */}
             <div className="relative w-[40%] h-full flex items-center">
               <Image
                 src={ExpenseDetails}
