@@ -8,7 +8,7 @@ import PayImage from '@/public/Images/HeroPay.png'
 import CryptoImage from '@/public/Images/HeroCrypto.png'
 import HeroBG from '@/public/Images/Hero BG.png'
 import Vector from '@/public/Images/Vector.png'
-import HeroOverlay from '@/public/Images/HeroOverlay.png'
+// import HeroOverlay from '@/public/Images/HeroOverlay.png'
 
 interface HeroProps {
   mode: 'pay' | 'crypto'
@@ -48,7 +48,7 @@ export default function Hero({ mode, setMode }: HeroProps) {
       </div>
 
       {/* CONTENT LAYER */}
-      <div className="relative grid lg:grid-cols-2 w-full px-6 py-8 md:py-16 h-full">
+      <div className="relative grid lg:grid-cols-2 w-full px-6 pt-8 md:py-16 h-full">
         {/* LEFT COLUMN: Content */}
         <div className="relative flex items-center w-full lg:pl-16 z-30">
           <div className="flex flex-col  w-full">
@@ -132,21 +132,21 @@ export default function Hero({ mode, setMode }: HeroProps) {
               key={mode} // Using key forces a re-animation when mode changes
               priority
               fill
-              className="object-contain scale-110 md:scale-200 lg:scale-110 w-full animate-in fade-in zoom-in duration-700"
+              className="object-contain scale-125 md:scale-200 lg:scale-110 w-full animate-in fade-in zoom-in duration-700"
             />
           </div>
         </div>
       </div>
 
       {/* BOTTOM OVERLAY IMAGE */}
-      <div className="absolute bottom-0 md:-bottom-28 lg:-bottom-32 left-0 w-full z-20 h-auto pointer-events-none">
+      {/* <div className="absolute bottom-0 md:-bottom-28 lg:-bottom-32 left-0 w-full z-50 h-auto pointer-events-none">
         <Image
           src={HeroOverlay}
           alt="Hero Overlay"
           className="w-full h-full object-fill"
           priority
         />
-      </div>
+      </div> */}
     </section>
   )
 }
