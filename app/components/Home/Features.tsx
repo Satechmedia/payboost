@@ -5,6 +5,7 @@ import {
   SectionHeading,
   SectionTag,
 } from '@/app/components/shared/Typography'
+import ActionButton from '@/app/components/shared/ActionButton'
 
 export default function Features() {
   const features = [
@@ -75,9 +76,7 @@ export default function Features() {
           ))}
         </div>
 
-        <button className="border border-[#E2FF54]/30 text-white rounded-full px-10 py-3 text-xs font-bold font-poppins hover:bg-white/5 transition-all">
-          Get Started
-        </button>
+        <ActionButton text="Get Started" />
       </div>
     </section>
   )

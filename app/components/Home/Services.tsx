@@ -5,6 +5,7 @@ import CardsMockup from '@/public/Images/CardsMockup.png' // Left middle card
 import InsightsMockup from '@/public/Images/InsightsMockup.png' // Right middle card
 import { SectionHeading, SectionTag } from '@/app/components/shared/Typography'
 import ExpenseDetails from '@/public/Images/ExpenseDetails.png'
+import ActionButton from '@/app/components/shared/ActionButton'
 
 export default function Services() {
   return (
@@ -142,9 +143,7 @@ export default function Services() {
         </div>
 
         <div className="flex justify-center mt-10">
-          <button className="border border-primary/60 px-8 py-2 rounded-full text-xs font-bold capitalize hover:bg-primary hover:text-white transition-all cursor-pointer">
-            View More
-          </button>
+          <ActionButton text="View More" />
         </div>
       </div>
     </section>

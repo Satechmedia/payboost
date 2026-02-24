@@ -2,6 +2,7 @@ import Image from 'next/image'
 import HandPhone from '@/public/Images/Free-mockup-hand-holding-iPhone14.png'
 import SectionBG from '@/public/Images/FinalCTABG.png'
 import { SectionDescription } from '@/app/components/shared/Typography'
+import ActionButton from '@/app/components/shared/ActionButton'
 
 export default function FinalCTA() {
   return (
@@ -31,9 +32,13 @@ export default function FinalCTA() {
               experience.
             </SectionDescription>
 
-            <button className="bg-primary text-white rounded-full w-fit mx-auto md:ms-auto px-10 py-3 text-xs font-bold font-poppins shadow-[0_4px_20px_rgba(22,181,30,0.3)] hover:scale-105 transition-all">
-              Get Started
-            </button>
+            <ActionButton
+              text="Get Started"
+              borderColor="border-primary"
+              bgColor="bg-primary"
+              hoverBg="hover:bg-primary/20"
+              className="w-fit mx-auto md:mx-0"
+            />
           </div>
 
           {/* Right Content (Hand holding phone) */}

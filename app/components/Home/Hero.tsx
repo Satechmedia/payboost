@@ -34,7 +34,7 @@ export default function Hero({ mode, setMode }: HeroProps) {
   }
 
   return (
-    <section className="relative flex items-center bg-background overflow-hidden w-full max-h-[100vh] py-12 md:py-0">
+    <section className="relative flex items-center overflow-hidden w-full lg:max-h-screen py-12">
       {/* BACKGROUND IMAGE LAYER */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -48,7 +48,7 @@ export default function Hero({ mode, setMode }: HeroProps) {
       </div>
 
       {/* CONTENT LAYER */}
-      <div className="relative grid lg:grid-cols-2 w-full px-6 py-8 h-full">
+      <div className="relative grid lg:grid-cols-2 w-full px-6 py-8 md:py-16 h-full">
         {/* LEFT COLUMN: Content */}
         <div className="relative flex items-center w-full lg:pl-16 z-30">
           <div className="flex flex-col  w-full">
@@ -82,19 +82,21 @@ export default function Hero({ mode, setMode }: HeroProps) {
                 alt="Vector"
                 className="object-contain relative"
               />
-              <span className="text-xs font-medium">100% TRUSTED PLATFORM</span>
+              <span className="text-[10px] md:text-xs font-medium">
+                100% TRUSTED PLATFORM
+              </span>
             </div>
 
-            <h1 className="w-full text-3xl md:text-6xl font-bold text-foreground tracking-[-5%] font-syne text-center lg:text-left uppercase transition-all duration-500">
+            <h1 className="w-full text-3xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-[-5%] font-syne text-center lg:text-left uppercase transition-all duration-500">
               {content[mode].title}
               <br className="hidden lg:inline" />
               <span className="text-[#E2FF54]"> {content[mode].highlight}</span>
             </h1>
-            <p className="w-full max-w-87.5 text-xs md:text-sm mt-2 font-normal text-center lg:text-left font-poppins text-foreground/80 min-h-10">
+            <p className="w-full max-w-87.5 text-xs md:text-sm mt-2 font-normal text-center mx-auto lg:mx-0 lg:text-left font-poppins text-foreground/80 min-h-10">
               {content[mode].description}
             </p>
 
-            <div className="pt-6 relative flex flex-col w-full lg:max-w-md">
+            <div className="pt-6 relative flex flex-col w-full max-w-md mx-auto lg:mx-0 items-center lg:items-start">
               {/* Store Buttons */}
               <div className="flex flex-row items-center gap-4 mt-0">
                 <Image
@@ -115,14 +117,14 @@ export default function Hero({ mode, setMode }: HeroProps) {
                 width="w-16"
                 height="2px"
                 color="bg-gray-700"
-                className="absolute -bottom-4 left-1/2 -translate-x-1/2"
+                className="absolute -bottom-4 left-1/3 -translate-x-1/2"
               />
             </div>
           </div>
         </div>
 
         {/* RIGHT COLUMN: Hero Illustration */}
-        <div className="relative flex justify-end bg-transparent w-full">
+        <div className="relative flex justify-end bg-transparent w-full md:mt-48 lg:mt-0">
           <div className="w-full h-75 lg:h-full lg:absolute transition-opacity duration-500">
             <Image
               src={content[mode].image}
@@ -130,14 +132,14 @@ export default function Hero({ mode, setMode }: HeroProps) {
               key={mode} // Using key forces a re-animation when mode changes
               priority
               fill
-              className="object-contain scale-110 w-full animate-in fade-in zoom-in duration-700"
+              className="object-contain scale-110 md:scale-200 lg:scale-110 w-full animate-in fade-in zoom-in duration-700"
             />
           </div>
         </div>
       </div>
 
       {/* BOTTOM OVERLAY IMAGE */}
-      <div className="absolute bottom-0 lg:-bottom-32 left-0 w-full z-20 h-auto pointer-events-none">
+      <div className="absolute bottom-0 md:-bottom-28 lg:-bottom-32 left-0 w-full z-20 h-auto pointer-events-none">
         <Image
           src={HeroOverlay}
           alt="Hero Overlay"

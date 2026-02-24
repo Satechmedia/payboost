@@ -27,7 +27,7 @@ export default function AboutUs({ mode, setMode }: AboutProps) {
         />
       </div>
       {/* Left: Phone Images */}
-      <div className="relative flex justify-center items-center z-30">
+      <div className="relative flex justify-center items-center z-30 order-2 md:order-1">
         <Image
           src={Phones}
           alt="App Mockup"
@@ -36,7 +36,7 @@ export default function AboutUs({ mode, setMode }: AboutProps) {
       </div>
 
       {/* Right: Content */}
-      <div className="flex flex-col z-30 px-6">
+      <div className="flex flex-col z-30 px-6 w-full order-1 md:order-2">
         <SectionTag bgColor="bg-white" textColor="text-black">
           About Us
         </SectionTag>

@@ -1,7 +1,5 @@
 // /app/data/navLinks.ts
 
-
-
 import { NavLink } from '@/app/types/navigation'
 
 export const navLinks: NavLink[] = [

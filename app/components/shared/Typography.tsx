@@ -34,7 +34,7 @@ interface HeadingProps {
 
 export const SectionHeading = ({ children, className = '' }: HeadingProps) => (
   <h2
-    className={`text-2xl md:text-5xl font-bold text-foreground tracking-[-5%] font-syne text-center md:text-left uppercase transition-all duration-500 ${className}`}
+    className={`text-2xl md:text-3xl lg:text-5xl   font-bold text-foreground tracking-[-5%] font-syne text-center md:text-left uppercase transition-all duration-500 ${className}`}
   >
     {children}
   </h2>

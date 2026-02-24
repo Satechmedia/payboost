@@ -6,6 +6,7 @@ import {
   SectionHeading,
   SectionTag,
 } from '@/app/components/shared/Typography'
+import ActionButton from '@/app/components/shared/ActionButton'
 
 export default function Security() {
   return (
@@ -24,16 +25,16 @@ export default function Security() {
 
       <div className="relative z-30 max-w-6xl mx-auto px-6 grid md:grid-cols-2 items-center gap-0">
         {/* Left: Shield Illustration */}
-        <div className="flex justify-center">
+        <div className="flex justify-center order-2 md:order-1">
           <Image
             src={Shield}
             alt="Security Shield"
-            className="w-full max-w-80 object-contain"
+            className="w-full max-w-80 object-contain scale-75 md:scale-100"
           />
         </div>
 
         {/* Right: Content */}
-        <div className="flex flex-col">
+        <div className="flex flex-col order-1 md:order-2">
           <SectionTag bgColor="bg-[#003B47]" textColor="text-white">
             Trustworthiness
           </SectionTag>
@@ -50,9 +51,13 @@ export default function Security() {
             </SectionDescription>
           </div>
 
-          <button className="bg-primary text-white rounded-full w-fit mx-auto md:mx-0 px-10 py-3 text-xs font-bold font-poppins shadow-[0_4px_20px_rgba(22,181,30,0.3)] hover:scale-105 transition-all mt-4">
-            Get Started
-          </button>
+          <ActionButton
+            text="Get Started"
+            borderColor="border-primary"
+            bgColor="bg-primary"
+            hoverBg="hover:bg-primary/20"
+            className="w-fit mx-auto md:mx-0"
+          />
         </div>
       </div>
     </section>
