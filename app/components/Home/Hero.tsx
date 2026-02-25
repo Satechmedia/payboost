@@ -4,10 +4,8 @@ import Image from 'next/image'
 import Line from '@/app/components/shared/Line'
 import AppStore from '@/public/Images/AppStore.png'
 import GooglePlay from '@/public/Images/GooglePlay.png'
-import PayImage from '@/public/Images/HeroPay.png'
-import CryptoImage from '@/public/Images/HeroCrypto.png'
 import HeroBG from '@/public/Images/Hero BG.png'
-import Vector from '@/public/Images/Vector.png'
+import { contents } from '@/app/data/contents'
 // import HeroOverlay from '@/public/Images/HeroOverlay.png'
 
 interface HeroProps {
@@ -16,23 +14,6 @@ interface HeroProps {
 }
 
 export default function Hero({ mode, setMode }: HeroProps) {
-  const content = {
-    pay: {
-      title: 'Finance with Security And',
-      highlight: 'Flexibility',
-      description:
-        'no-fee checking account with cash back rewards. Enjoy fee-free banking and earn cash back on your everyday purchases.',
-      image: PayImage,
-    },
-    crypto: {
-      title: 'The Future of Digital',
-      highlight: 'Currency',
-      description:
-        'Buy, sell, and manage your crypto assets with industry-leading security. Seamlessly integrate your digital wallet with your daily spending.',
-      image: CryptoImage,
-    },
-  }
-
   return (
     <section className="relative flex items-center overflow-hidden w-full lg:max-h-screen py-12">
       {/* BACKGROUND IMAGE LAYER */}
@@ -77,23 +58,21 @@ export default function Hero({ mode, setMode }: HeroProps) {
             </div>
 
             <div className="flex gap-2 bg-[#2E4A5D] p-2 rounded-full justify-center w-fit mx-auto lg:mx-0 mb-4">
-              <Image
-                src={Vector}
-                alt="Vector"
-                className="object-contain relative"
-              />
               <span className="text-[10px] md:text-xs font-medium">
-                100% TRUSTED PLATFORM
+                🔥 100% TRUSTED PLATFORM
               </span>
             </div>
 
             <h1 className="w-full text-3xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-[-5%] font-syne text-center lg:text-left uppercase transition-all duration-500">
-              {content[mode].title}
+              {contents[mode].title}
               <br className="hidden lg:inline" />
-              <span className="text-[#E2FF54]"> {content[mode].highlight}</span>
+              <span className="text-[#E2FF54]">
+                {' '}
+                {contents[mode].highlight}
+              </span>
             </h1>
             <p className="w-full max-w-87.5 text-xs md:text-sm mt-2 font-normal text-center mx-auto lg:mx-0 lg:text-left font-poppins text-foreground/80 min-h-10">
-              {content[mode].description}
+              {contents[mode].description}
             </p>
 
             <div className="pt-6 relative flex flex-col w-full max-w-md mx-auto lg:mx-0 items-center lg:items-start">
@@ -127,12 +106,14 @@ export default function Hero({ mode, setMode }: HeroProps) {
         <div className="relative flex justify-end bg-transparent w-full md:mt-48 lg:mt-0">
           <div className="w-full h-75 lg:h-full lg:absolute transition-opacity duration-500">
             <Image
-              src={content[mode].image}
+              src={contents[mode].image}
               alt="Payboost Illustration"
               key={mode} // Using key forces a re-animation when mode changes
               priority
               fill
-              className="object-contain scale-125 md:scale-200 lg:scale-110 w-full animate-in fade-in zoom-in duration-700"
+              className={`object-contain scale-125 md:scale-200 ${
+                mode === 'crypto' ? 'lg:scale-130' : 'lg:scale-110'
+              } w-full animate-in fade-in zoom-in duration-700`}
             />
           </div>
         </div>
