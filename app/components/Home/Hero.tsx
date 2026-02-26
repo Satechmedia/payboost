@@ -119,7 +119,7 @@ export default function Hero({ mode, setMode }: HeroProps) {
         </div>
 
         {/* RIGHT COLUMN: Hero Illustration */}
-        <div className="relative flex justify-end bg-transparent w-full md:mt-48 lg:mt-0 min-h-[400px]">
+        <div className="relative flex justify-end  w-full md:mt-48 lg:mt-0">
           <AnimatePresence mode="wait">
             <motion.div
               key={mode}

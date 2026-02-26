@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="min-h-[calc(100vh-64px)] flex flex-col items-center justify-center">
       <Hero mode={mode} setMode={setMode} />
-      <div className="absolute -bottom-60 md:-bottom-28 lg:-bottom-32 left-0 w-full z-20 h-72 md:h-auto pointer-events-none">
+      <div className="absolute -bottom-54 md:-bottom-28 lg:-bottom-32 left-0 w-full z-20 h-72 md:h-auto pointer-events-none">
         <Image
           src={HeroOverlay}
           alt="Hero Overlay"
