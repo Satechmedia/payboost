@@ -17,7 +17,7 @@ interface HeroProps {
 
 export default function Hero({ mode, setMode }: HeroProps) {
   return (
-    <section className="relative flex items-center overflow-hidden w-full lg:max-h-screen py-12">
+    <section className="relative flex items-center overflow-hidden w-full lg:max-h-screen pt-12  md:py-12">
       {/* BACKGROUND IMAGE LAYER */}
       <div className="absolute inset-0 z-0">
         <Image

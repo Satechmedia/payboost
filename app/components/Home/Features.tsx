@@ -82,7 +82,15 @@ export default function Features({ mode }: FeaturesProps) {
           </motion.div>
         </AnimatePresence>
 
-        <ActionButton text="Get Started" />
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="w-full flex"
+        >
+          <ActionButton text="Get Started" className="w-fit mx-auto md:mx-0" />
+        </motion.div>
       </div>
     </section>
   )

@@ -91,6 +91,7 @@ export default function Security() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
+            className='w-full flex'
           >
             <ActionButton
               text="Get Started"
