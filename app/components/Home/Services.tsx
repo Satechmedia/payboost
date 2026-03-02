@@ -31,10 +31,17 @@ export default function Services() {
   }
 
   return (
-    <section className="relative overflow-hidden w-full md:pt-6 pb-24">
+    <section className="relative overflow-hidden w-full md:pt-6 pb-24 bg-red-400">
       {/* BACKGROUND IMAGE LAYER */}
-      <div className="absolute inset-0 z-10">
-        <Image src={SectionBG} alt="bg" fill className="object-fill" />
+      <div className="absolute z-10 inset-0 w-full">
+        <Image
+          src={SectionBG}
+          alt="Background Pattern"
+          fill
+          priority
+          className="object-fill w-full scale-125"
+          quality={100}
+        />
       </div>
 
       <div className="relative z-30 max-w-6xl mx-auto px-6">

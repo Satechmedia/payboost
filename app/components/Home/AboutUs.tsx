@@ -22,13 +22,13 @@ export default function AboutUs({ mode, setMode }: AboutProps) {
       className="relative overflow-hidden w-full grid md:grid-cols-2 gap-12 items-center py-16"
     >
       {/* BACKGROUND IMAGE LAYER */}
-      <div className="absolute z-10 inset-0 w-full ">
+      <div className="absolute z-10 inset-0 w-full">
         <Image
           src={SectionBG}
           alt="Background Pattern"
           fill
           priority
-          className="object-fill w-full"
+          className="object-fill w-full scale-125"
           quality={100}
         />
       </div>

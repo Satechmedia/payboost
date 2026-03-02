@@ -38,7 +38,7 @@ export default function Features({ mode }: FeaturesProps) {
           alt="BG"
           fill
           priority
-          className="object-fill w-full"
+          className="object-fill w-full scale-125"
         />
       </div>
 

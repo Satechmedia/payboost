@@ -13,10 +13,10 @@ import { navLinks } from '@/app/data/navLinks'
 
 const Footer = () => {
   return (
-    <footer className="w-full text-white py-16 px-6 overflow-hidden">
+    <footer className="w-full text-white py-10 px-6 overflow-hidden">
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
         {/* App Store Buttons */}
-        <div className="flex flex-row items-center gap-4 mb-10">
+        <div className="flex flex-row items-center gap-4 mb-6">
           <Link href="#">
             <Image
               src={AppStore}
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
 
         {/* Logo and Main Nav */}
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 mb-12">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 mb-6">
           <Link href="/" className="hover:opacity-80 transition-opacity">
             <Image
               src={Logo}
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
 
         {/* Social Icons - Circular Green background as per image */}
-        <div className="flex gap-4 mb-12">
+        <div className="flex gap-4 mb-6">
           {[
             { icon: <FaTwitter />, href: '#' },
             { icon: <FaFacebookF />, href: '#' },

@@ -21,7 +21,7 @@ export default function Security() {
           alt="Background Pattern"
           fill
           priority
-          className="object-fill w-full"
+          className="object-fill w-full scale-125"
           quality={100}
         />
       </div>
@@ -91,7 +91,7 @@ export default function Security() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
-            className='w-full flex'
+            className="w-full flex"
           >
             <ActionButton
               text="Get Started"
