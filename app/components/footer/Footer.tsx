@@ -13,7 +13,7 @@ import { navLinks } from '@/app/data/navLinks'
 
 const Footer = () => {
   return (
-    <footer className="w-full text-white py-10 px-6 overflow-hidden">
+    <footer className="w-full text-white pb-10 px-6 overflow-hidden">
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
         {/* App Store Buttons */}
         <div className="flex flex-row items-center gap-4 mb-6">

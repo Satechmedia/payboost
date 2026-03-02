@@ -35,7 +35,7 @@ export default function Services() {
   }
 
   return (
-    <section className="relative overflow-hidden w-full md:pt-6 pb-24">
+    <section className="relative overflow-hidden w-full md:pt-6 pb-6">
       {/* BACKGROUND IMAGE LAYER */}
       {/* <div className="absolute z-10 inset-0 w-full">
         <Image
@@ -231,14 +231,14 @@ export default function Services() {
           </motion.div>
         </div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
           className="flex justify-center mt-10"
         >
           <ActionButton text="View More" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )
