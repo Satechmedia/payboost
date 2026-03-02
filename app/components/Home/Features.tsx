@@ -31,7 +31,10 @@ export default function Features({ mode }: FeaturesProps) {
   }
 
   return (
-    <section id="features" className="relative overflow-hidden w-full pb-20 md:py-10">
+    <section
+      id="features"
+      className="relative overflow-hidden w-full pb-20 md:py-10"
+    >
       <div className="absolute inset-0 w-full">
         <Image
           src={SectionBG}
