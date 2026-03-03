@@ -6,7 +6,7 @@ export const contents = {
     title: 'Finance with Security And',
     highlight: 'Flexibility',
     description:
-      'no fee checking account with cash back rewards. Enjoy fee-free banking and earn cash back on your everyday purchases.',
+      'no fee checking account with cash back rewards. Enjoy fee free banking and earn cash back on your everyday purchases.',
     image: PayImage,
   },
   crypto: {
