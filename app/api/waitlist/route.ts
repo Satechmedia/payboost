@@ -47,6 +47,8 @@
 //   }
 // }
 
+
+
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 
@@ -56,9 +58,14 @@ export async function POST(req: Request) {
   try {
     const { full_name, email } = await req.json()
 
+    const fromName = process.env.MAIL_FROM_NAME || 'PayBoost'
+    const fromEmail =
+      process.env.MAIL_FROM_EMAIL || 'info@contacts.keilapay.com'
+    const sender = `${fromName} <${fromEmail}>`
+
     const data = await resend.emails.send({
-      from: 'PayBoost Waitlist <onboarding@resend.dev>',
-      to: [process.env.SUPPORT_EMAIL || 'notify@contacts.keilapay.com'],
+      from: sender,
+      to: [process.env.SUPPORT_EMAIL || 'satechmedia@gmail.com'],
       replyTo: email,
       subject: '🚀 New PayBoost Waitlist Entry!',
       html: `
