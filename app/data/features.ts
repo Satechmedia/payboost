@@ -14,7 +14,7 @@ export const featuresData = {
     },
     {
       title: 'Savings & Loans',
-      desc: 'Grow Your Savings, Set Goals, And Access Quick Loans — All In One Simple Place.',
+      desc: 'Grow Your Savings, Set Goals, And Access Quick Loans. All In One Simple Place.',
     },
     {
       title: 'Utility',
@@ -32,7 +32,7 @@ export const featuresData = {
     },
     {
       title: 'Secure Wallet',
-      desc: 'Industry-leading security to keep your digital assets safe with multi-sig and cold storage options.',
+      desc: 'Industry leading security to keep your digital assets safe with multi sig and cold storage options.',
     },
     {
       title: 'Staking',
@@ -47,7 +47,7 @@ export const featuresData = {
       desc: 'Spend your crypto at millions of merchants worldwide with our specialized crypto debit cards.',
     },
     {
-      title: 'Real-time Alerts',
+      title: 'Real time Alerts',
       desc: 'Stay ahead of the market with instant price alerts and personalized market insights.',
     },
   ],

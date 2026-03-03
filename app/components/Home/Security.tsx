@@ -81,7 +81,7 @@ export default function Security() {
           <div className="mt-4">
             <SectionDescription>
               Our Mission Is To Make Finance More Accessible, Transparent, And
-              Secure For Everyone. With Cutting-Edge Technology, We Ensure Your
+              Secure For Everyone. With Cutting Edge Technology, We Ensure Your
               Assets Are Always Protected.
             </SectionDescription>
           </div>
