@@ -71,7 +71,7 @@ export async function POST(req: Request) {
       html: `
         <div style="font-family: sans-serif; padding: 40px; background-color: #01202F; color: white; border-radius: 20px;">
           <h2 style="color: #00C820;">New Interest in PayBoost!</h2>
-          <p style="font-size: 16px;">Someone just joined the waitlist for the new version.</p>
+          <p style="font-size: 16px;">Someone just joined the waitlist for the beta version.</p>
           <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin-top: 20px;">
             <p><strong>Name:</strong> ${full_name}</p>
             <p><strong>Email:</strong> ${email}</p>
