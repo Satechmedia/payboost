@@ -6,7 +6,7 @@ export const contents = {
     title: 'Finance with Security And',
     highlight: 'Flexibility',
     description:
-      'No fee checking account with cash back rewards. Enjoy fee free banking and earn cash back on your everyday purchases.',
+      'Payboost combines digital payments with practical loan and savings solutions built for everyday users and small businesses.',
     image: PayImage,
   },
   crypto: {

@@ -67,7 +67,7 @@ export default function Hero({ mode, setMode }: HeroProps) {
               className="flex gap-2 bg-[#2E4A5D] p-2 rounded-full justify-center w-fit mx-auto lg:mx-0 mb-4"
             >
               <span className="text-[10px] md:text-xs font-medium">
-                🔥 100% TRUSTED PLATFORM
+                🔥 Built for individuals and SMEs
               </span>
             </motion.div>
 
