@@ -77,7 +77,7 @@ export default function WaitlistModal({
               {!isSubmitted ? (
                 <>
                   <h2 className="text-xl md:text-2xl font-bold text-white mb-2 leading-tight">
-                    A Better Version Is On The Way. <br />
+                    A Beta Version Is On The Way. <br />
                     <span className="text-white/90 font-medium">
                       Be the First to Know.
                     </span>
