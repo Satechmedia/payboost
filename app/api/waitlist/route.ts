@@ -3,13 +3,25 @@ import { NextResponse } from 'next/server'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
+const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID || ''
+
 export async function POST(req: Request) {
   try {
     const { full_name, email } = await req.json()
 
+    if (AUDIENCE_ID) {
+      await resend.contacts.create({
+        email: email,
+        firstName: full_name.split(' ')[0],
+        lastName: full_name.split(' ').slice(1).join(' '),
+        unsubscribed: false,
+        audienceId: AUDIENCE_ID,
+      })
+    }
+
     const data = await resend.emails.send({
       from: 'PayBoost Waitlist <onboarding@resend.dev>',
-      to: [process.env.SUPPORT_EMAIL || 'adeoluamole@gmail.com'],
+      to: [process.env.SUPPORT_EMAIL || 'notify@contacts.keilapay.com'],
       replyTo: email,
       subject: '🚀 New PayBoost Waitlist Entry!',
       html: `
@@ -25,9 +37,12 @@ export async function POST(req: Request) {
       `,
     })
 
-    return NextResponse.json(data)
+    return NextResponse.json({ success: true, data })
   } catch (err) {
     console.error('Resend API Error:', err)
-    return NextResponse.json({ error: 'Failed to send email' }, { status: 500 })
+    return NextResponse.json(
+      { error: 'Failed to process request' },
+      { status: 500 },
+    )
   }
 }
