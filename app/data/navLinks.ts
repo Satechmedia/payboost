@@ -4,16 +4,7 @@ import { NavLink } from '@/app/types/navigation'
 
 export const navLinks: NavLink[] = [
   { label: 'Home', href: '/' },
-
-  { label: 'About Us', href: '#about-us' },
-  {
-    label: 'Features',
-    href: '#features',
-    // children: [
-    //   { label: 'Crypto', href: '#features-crypto' },
-    //   { label: 'Pay In', href: '#features-pay-in' },
-    // ],
-  },
-  // { label: 'Contact', href: '#contact' },
+  { label: 'Features', href: '#features' },
   { label: 'Services', href: '#services' },
+  { label: 'About Us', href: '#about-us' }, 
 ]
