@@ -41,7 +41,7 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 ">
-          <div className="flex justify-between items-center py-3">
+          <div className="flex justify-between items-center py-3 shadow-lg md:shadow-0">
             <Link href="/" className="">
               <Image
                 src={Logo}
@@ -85,7 +85,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="lg:hidden px-4 py-12 space-y-4 bg-background">
+          <div className="lg:hidden px-4 pt-6 pb-12 space-y-4 bg-background">
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label}>
