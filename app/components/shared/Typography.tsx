@@ -17,7 +17,7 @@ export const SectionTag = ({
   <div
     className={`flex items-center gap-2 ${bgColor} border border-white/10 w-fit mx-auto md:mx-0 px-3 py-1 rounded-full mb-6`}
   >
-    <span className="text-[#E2FF54] text-xs">{icon}</span>
+    {/*  <span className="text-[#E2FF54] text-xs">{icon}</span> */} 
     <span
       className={`text-[10px] font-bold uppercase tracking-wider ${textColor}`}
     >
